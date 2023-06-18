@@ -1,0 +1,32 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    font-family: sans-serif;
+ }
+
+.abt-sec{
+   display: block;
+   text-align: center;
+ 
+
+}
+
+p[draggable="Montserrat"]{
+    font-family: 'Montserrat', sans-serif;
+}
+.abt-img{
+    border: 5px solid grey;
+    width:500px;
+    height:500px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.welcome{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}

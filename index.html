@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music industry</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron:wght@500&family=Poppins:wght@200;300;400;500;600;700&family=Sacramento&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link rel="icon" href="media/icon.png" type="image">
+    
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="top-left"><img src="media/logo.jpg" id="logo">MUSIC industry</div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="ABOUT.HTML">ABOUT</a></li>
+                <li><a href="SPECIFICATIONS.html">SPECIFICATIONS</a></li>
+                <li><a href="PRODUCTS.html">PRODUCTS</a></li>
+                <li><a href="CONNECT.html">CONNECT</a></li>
+
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left-col">
+                <h1>THE<br>REAL<br>SOUND</h1>
+            </div>
+            <div class="right-col">
+                <p>Click Here To Listen</p>
+                <img src="media/play.png" id="icon">
+            </div>
+        </div>
+    </div>
+    <audio id="mySong">
+        <source src="media/song.mp3" type="audio/mp3">
+    </audio>
+<script>
+    var mySong = document.getElementById("mySong");
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+        if(mySong.paused){
+                mySong.play();
+                icon.src="media/pause.png";
+            }
+        else{
+                mySong.pause();
+                icon.src="media/play.png";
+            }
+        }
+</script>
+</body>
+</html>
